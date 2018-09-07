@@ -3,7 +3,16 @@ def titlecase(word):
     word = word.capitalize()
     return word
 
+def display_banner():
+    '''Display program name in banner'''
+    msg = 'AWESOME camelCaseGenerator PROGRAM'
+    stars = '*' * len(msg)
+    print('\n', stars, '\n', msg, '\n', stars, '\n')
+
 def camelCase():
+    
+    display banner()
+    
     toParse = input("Enter a senstence to parse to Camel Case: ")
     words = toParse.split(" ")
     parsed = ""
